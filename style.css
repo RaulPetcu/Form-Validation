@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Stick&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Stick', sans-serif;
+}
+
+body{
+    /* background: linear-gradient(to right,rgb(255, 153, 0), rgb(255, 94, 0));     */
+    background-color: #ff841f;
+}
+
+.container{ 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 350px;
+    width: 100%;
+    background: #fff;
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 2px rgb(33, 167, 0);
+}
+
+.container h2{
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    color:rgb(95, 0, 133);
+}
+
+.container .input-field{
+    margin-bottom: 10px;    
+}
+
+.container .input-field input[type="text"], 
+.container textarea {
+    width: 100%;
+    border: 1px solid rgb(117, 0, 0);
+    padding: 10px;
+}
+
+textarea{
+    height: 100px;
+    resize: none;
+}
+
+.btn input[type="submit"]{
+    border: 0px;
+    background-color: rgb(33, 167, 0);
+    color: #fff;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 5px;
+    width: 100%;
+    letter-spacing: 4px;
+    font-weight: bold; 
+    cursor: pointer;
+}
+.btn input[type="submit"]:hover{
+    background-color: rgb(39, 197, 0);   
+}
+
+.container #error-msg{
+    margin-bottom: 20px;
+    padding: 0px;    
+    background-color: rgba(245, 70, 70, 0.986);
+    color: #fff;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.container #success-msg{
+    border-radius: 5px;
+    padding: 0px;        
+    background-color: rgba(81, 240, 94, 0.986);
+    color: #000;
+    text-align: center;
+    transition: all 0.3s ease;
+}
